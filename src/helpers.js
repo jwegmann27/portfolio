@@ -1,0 +1,2 @@
+/*In this file put any functions that will be used throughout the app that you want to be
+avaliable globally*/
