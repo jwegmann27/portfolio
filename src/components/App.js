@@ -20,10 +20,12 @@ class App extends React.Component {
     return (
       <div>
         <Upper />
-        <Description />
-        <Projects projectInfo={this.state.projects} />
-        <Tech />
-        <Contact />
+        <div className="grid">
+          <Description />
+          <Projects projectInfo={this.state.projects} />
+          <Tech />
+          <Contact />
+        </div>
       </div>
     )
   }

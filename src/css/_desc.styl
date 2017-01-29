@@ -1,0 +1,80 @@
+.description-section
+  padding: 5em 0
+  overflow: hidden
+
+.stats-section
+  padding: 2em
+
+  .stats-image, .stats-main
+    float: left
+
+  .stats-image
+    width: 40%
+    overflow: hidden
+    padding: 0 4em 4em 0
+    img
+      border-radius: 10px
+      box-shadow: 10px 10px 10px rgba(0,0,0,.2)
+
+  .stats-main
+    width: 60%
+    h2
+      font-size: 5em
+    p
+      font-size: 2em
+      margin: 0
+      padding: 1em 0
+    .bar-wrap
+      float: left
+      width: 50%
+      .health-bar
+        background: #04c304
+      .mana-bar
+        background: #3cb8f3
+      .health-bar, .mana-bar
+        width: 235px
+        height: 30px
+        border-radius: 5px
+        position: relative
+        span
+          position: absolute
+          height: 15px
+          width: 2px
+          &:first-child
+            left: 20%
+            top: 0
+            background: #252525
+          &:nth-child(2)
+            left: 40%
+            top: 0
+            background: #252525
+          &:nth-child(3)
+            left: 60%
+            top: 0
+            background: #252525
+          &:nth-child(4)
+            left: 80%
+            top: 0
+            background: #252525
+          &:last-child
+            right: 70px
+            font-size: .8em
+            bottom: -3px
+    .stats-list
+      overflow: hidden
+      width: 100%
+      padding: 0
+      text-align: center
+      p
+        padding: 1em 0
+        text-align: left
+      ul
+        list-style: none
+        font-size: 1.6em
+        li
+          display: inline-block
+          &:after
+            content: '|'
+            padding: 0 .3em
+          &:last-child:after
+            content: ''

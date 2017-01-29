@@ -1,3 +1,115 @@
+.description-section {
+  padding: 5em 0;
+  overflow: hidden;
+}
+.stats-section {
+  padding: 2em;
+}
+.stats-section .stats-image,
+.stats-section .stats-main {
+  float: left;
+}
+.stats-section .stats-image {
+  width: 40%;
+  overflow: hidden;
+  padding: 0 4em 4em 0;
+}
+.stats-section .stats-image img {
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+.stats-section .stats-main {
+  width: 60%;
+}
+.stats-section .stats-main h2 {
+  font-size: 5em;
+}
+.stats-section .stats-main p {
+  font-size: 2em;
+  margin: 0;
+  padding: 1em 0;
+}
+.stats-section .stats-main .bar-wrap {
+  float: left;
+  width: 50%;
+}
+.stats-section .stats-main .bar-wrap .health-bar {
+  background: #04c304;
+}
+.stats-section .stats-main .bar-wrap .mana-bar {
+  background: #3cb8f3;
+}
+.stats-section .stats-main .bar-wrap .health-bar,
+.stats-section .stats-main .bar-wrap .mana-bar {
+  width: 235px;
+  height: 30px;
+  border-radius: 5px;
+  position: relative;
+}
+.stats-section .stats-main .bar-wrap .health-bar span,
+.stats-section .stats-main .bar-wrap .mana-bar span {
+  position: absolute;
+  height: 15px;
+  width: 2px;
+}
+.stats-section .stats-main .bar-wrap .health-bar span:first-child,
+.stats-section .stats-main .bar-wrap .mana-bar span:first-child {
+  left: 20%;
+  top: 0;
+  background: #252525;
+}
+.stats-section .stats-main .bar-wrap .health-bar span:nth-child(2),
+.stats-section .stats-main .bar-wrap .mana-bar span:nth-child(2) {
+  left: 40%;
+  top: 0;
+  background: #252525;
+}
+.stats-section .stats-main .bar-wrap .health-bar span:nth-child(3),
+.stats-section .stats-main .bar-wrap .mana-bar span:nth-child(3) {
+  left: 60%;
+  top: 0;
+  background: #252525;
+}
+.stats-section .stats-main .bar-wrap .health-bar span:nth-child(4),
+.stats-section .stats-main .bar-wrap .mana-bar span:nth-child(4) {
+  left: 80%;
+  top: 0;
+  background: #252525;
+}
+.stats-section .stats-main .bar-wrap .health-bar span:last-child,
+.stats-section .stats-main .bar-wrap .mana-bar span:last-child {
+  right: 70px;
+  font-size: 0.8em;
+  bottom: -3px;
+}
+.stats-section .stats-main .stats-list {
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+.stats-section .stats-main .stats-list p {
+  padding: 1em 0;
+  text-align: left;
+}
+.stats-section .stats-main .stats-list ul {
+  list-style: none;
+  font-size: 1.6em;
+}
+.stats-section .stats-main .stats-list ul li {
+  display: inline-block;
+}
+.stats-section .stats-main .stats-list ul li:after {
+  content: '|';
+  padding: 0 0.3em;
+}
+.stats-section .stats-main .stats-list ul li:last-child:after {
+  content: '';
+}
+.grid {
+  max-width: 992px;
+  margin: 0 auto;
+}
 .upper-wrap {
   overflow: hidden;
   position: relative;
@@ -7,9 +119,10 @@
   opacity: 0.5;
 }
 .upper-content {
+  width: 55%;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
 }
@@ -24,9 +137,19 @@
 .upper-content h2 {
   font-size: 36px;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
   margin: 0;
   background: #fff;
+  font-size: 10px;
+  font-family: 'montserrat', sans-serif;
 }
 h1,
 h2,

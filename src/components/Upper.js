@@ -13,14 +13,14 @@ class Upper extends React.Component {
       backgroundColor: "#000000",
       height: "100vh",
       width: "100%",
+      filter: "grayscale(1)",
     };
     return (
       <div className="upper-wrap">
         <div style={bgImgStyle} className="upper-full-image"></div>
         <div className="upper-content">
-          <h1>Joseph Wegmann</h1>
-          <h2>Front End Web Developer By Day</h2>
-          <h2>Batman By Night</h2>
+          <h1>Why, Hello There</h1>
+          <h2>Please Make Yourself at Home</h2>
         </div>
       </div>
     )

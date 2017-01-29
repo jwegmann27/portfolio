@@ -12,7 +12,7 @@ class Projects extends React.Component {
       //When I come back to this I will add if cat is work do this if cat is personal do this.
       <div className="project" key={key}>
         <h2>{project.name}</h2>
-        <img src="{project.image}" alt="project img" />
+        <img src={project.image} alt="project img" />
         <p>{project.desc}</p>
       </div>
     )
