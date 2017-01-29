@@ -4,15 +4,24 @@ import Description from './Description';
 import Projects from './Projects';
 import Tech from './Tech';
 import Contact from './Contact';
+import projectInfo from '../project-obj.js';
 
 
 class App extends React.Component {
+  constructor() {
+    super();
+    //set intial state
+    this.state = {
+      projects: projectInfo
+    };
+  }
+
   render() {
     return (
       <div>
         <Upper />
         <Description />
-        <Projects />
+        <Projects projectInfo={this.state.projects} />
         <Tech />
         <Contact />
       </div>
