@@ -20,6 +20,10 @@
 }
 .stats-section .stats-main {
   width: 60%;
+  padding: 2em;
+  background-color: #efefef;
+  border: 2px solid #cacaca;
+  border-radius: 10px;
 }
 .stats-section .stats-main h2 {
   font-size: 5em;
@@ -32,6 +36,7 @@
 .stats-section .stats-main .bar-wrap {
   float: left;
   width: 50%;
+  padding-bottom: 2em;
 }
 .stats-section .stats-main .bar-wrap .health-bar {
   background: #04c304;
@@ -43,8 +48,10 @@
 .stats-section .stats-main .bar-wrap .mana-bar {
   width: 235px;
   height: 30px;
+  margin: 0 auto;
   border-radius: 5px;
   position: relative;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 }
 .stats-section .stats-main .bar-wrap .health-bar span,
 .stats-section .stats-main .bar-wrap .mana-bar span {
@@ -89,7 +96,7 @@
   text-align: center;
 }
 .stats-section .stats-main .stats-list p {
-  padding: 1em 0;
+  padding: 0 0;
   text-align: left;
 }
 .stats-section .stats-main .stats-list ul {

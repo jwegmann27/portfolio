@@ -18,6 +18,10 @@
 
   .stats-main
     width: 60%
+    padding: 2em
+    background-color: #efefef
+    border: 2px solid #cacaca
+    border-radius: 10px
     h2
       font-size: 5em
     p
@@ -27,6 +31,7 @@
     .bar-wrap
       float: left
       width: 50%
+      padding-bottom: 2em
       .health-bar
         background: #04c304
       .mana-bar
@@ -34,8 +39,10 @@
       .health-bar, .mana-bar
         width: 235px
         height: 30px
+        margin: 0 auto
         border-radius: 5px
         position: relative
+        box-shadow: 5px 5px 10px rgba(0,0,0,.2)
         span
           position: absolute
           height: 15px
@@ -66,7 +73,7 @@
       padding: 0
       text-align: center
       p
-        padding: 1em 0
+        padding: 0 0
         text-align: left
       ul
         list-style: none
