@@ -15,7 +15,7 @@ class Description extends React.Component {
         weaknesses: ["Fire", "Poison", "Adorable Cats", "Falling From Great Heights"]
     };
   }
-
+  //I probably could have broken this up more. Perhaps I will but for now it is ok.
   renderStats() {
     const stats = this.state;
     return (
@@ -73,7 +73,7 @@ class Description extends React.Component {
               {stats.weaknesses.map(function(weak, index) {
                 return <li className='weak' key={index}>{weak}</li>;
               })}
-            </ul>          
+            </ul>
           </div>
         </div>
       </div>
