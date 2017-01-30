@@ -11,7 +11,7 @@ class Description extends React.Component {
         image: "http://fillmurray.com/300/350",
         attributes: ["Coachable", "Eager to try new things", "Self-Motivated"],
         interests: ["Web Development","PC Games", "Fantasy Novels", "Cooking"],
-        skills: ["SASS/CSS","JavaScript","Jquery","React"],
+        skills: ["SASS/CSS","WordPress","JavaScript","Jquery","React"],
         weaknesses: ["Fire", "Poison", "Adorable Cats", "Falling From Great Heights"]
     };
   }
