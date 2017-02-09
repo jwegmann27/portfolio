@@ -4,6 +4,9 @@
 //Gloabl Styles
 html
   box-sizing: border-box
+  //vertically align everything
+  height: 100%
+  margin: 0
 
 *, *:before, *:after
   box-sizing: inherit
@@ -13,7 +16,16 @@ body
   background #ececec
   font-size: 10px
   font-family: 'montserrat', sans-serif
+  //vertically align everything
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+  display: -webkit-flex
+  display: flex
 
 h1, h2, h3, h4
   padding 0
   margin 0
+
+#main
+  width: 100%
