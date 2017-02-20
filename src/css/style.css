@@ -114,7 +114,13 @@
 .stats-section .stats-main .stats-list ul li:last-child:after {
   content: '';
 }
-.grid {
+.main-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.main {
   max-width: 992px;
   margin: 0 0 0 auto;
 }
@@ -349,6 +355,32 @@ template {
 [hidden] {
   display: none;
 }
+.side-bar {
+  max-width: 225px;
+  padding: 3em 2em;
+  margin: 0 0 0 auto;
+}
+.side-bar img {
+  display: block;
+  margin: 0 auto;
+}
+.side-bar ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+}
+.side-bar ul li {
+  padding: 0;
+}
+.side-bar ul li a {
+  display: block;
+  padding: 1em;
+  font-size: 1.8em;
+  text-decoration: none;
+  color: #444;
+}
 .upper-wrap {
   overflow: hidden;
   position: relative;
@@ -407,4 +439,7 @@ h4 {
 }
 #main {
   width: 100%;
+}
+.strikeout {
+  text-decoration: line-through;
 }
