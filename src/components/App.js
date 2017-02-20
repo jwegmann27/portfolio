@@ -1,6 +1,6 @@
 import React from 'react';
 import Upper from './Upper';
-import Description from './Description';
+//import Description from './Description';
 import Projects from './Projects';
 import Contact from './Contact';
 import Sidebar from './Sidebar';
@@ -15,7 +15,7 @@ class App extends React.Component {
       projects: projectInfo
     };
   }
-
+  //<Description />
   render() {
     return (
       <div>
@@ -23,7 +23,6 @@ class App extends React.Component {
         <div className="main-section">
           <Sidebar />
           <div className="main">
-            <Description />
             <Projects projectInfo={this.state.projects} />
             <Contact />
           </div>
