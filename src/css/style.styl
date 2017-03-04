@@ -1,6 +1,12 @@
 // Import all partials
 @require './_*.styl'
 
+//varaibles
+bg-color = #fffff3
+title-color = #A593E0
+text-color = #566270
+alt-text-color = #E0E3DA
+
 //Gloabl Styles
 html
   box-sizing: border-box
@@ -13,7 +19,7 @@ html
 
 body
   margin 0
-  background #ececec
+  background: bg-color
   font-size: 10px
   font-family: 'montserrat', sans-serif
   //vertically align everything
@@ -26,6 +32,10 @@ body
 h1, h2, h3, h4
   padding 0
   margin 0
+  color: title-color
+
+p, a, li, span
+  color: text-color
 
 #main
   width: 100%
@@ -33,3 +43,10 @@ h1, h2, h3, h4
 //misc
 .strikeout
   text-decoration: line-through
+
+.hide-contact-wrap
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  background-color: bg-color
+  margin-bottom: 150px

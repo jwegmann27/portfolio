@@ -19,14 +19,16 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Upper />
-        <div className="main-section">
-          <Sidebar />
-          <div className="main">
-            <Projects projectInfo={this.state.projects} />
-            <Contact />
+        <div className="hide-contact-wrap">
+          <Upper />
+          <div className="main-section">
+            <Sidebar />
+            <div className="main">
+              <Projects projectInfo={this.state.projects} />
+            </div>
           </div>
         </div>
+        <Contact />
       </div>
     )
   }

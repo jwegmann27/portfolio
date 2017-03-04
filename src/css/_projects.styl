@@ -1,5 +1,12 @@
+//varaibles
+bg-color = #fffff3
+title-color = #A593E0
+text-color = #566270
+alt-text-color = #E0E3DA
+  
 .projects-wrap
   width: 100%
+  padding: 2em 0em
   overflow: hidden
 
 .projects-wrap-inner
@@ -16,7 +23,7 @@
   margin: 2em
   a
     display: inline-block
-    background-color: #000000
+    background-color: text-color !important
     overflow: hidden
     border-radius: 10px
     z-index: 5
@@ -28,18 +35,19 @@
         z-index: 10
     h2, p
       position: absolute;
-      color: #fff
       z-index: -1
       left: 50%
       transform: translateX(-50%);
     h2
       top: 20px
+      text-decoration: underline
       width: 100%
       text-align: center
       font-size: 2.8em
     p
-      bottom: 0
+      top: 35px
       width: 100%
+      color: alt-text-color
       font-size: 1.8em
       padding: 1em
     img

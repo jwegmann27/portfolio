@@ -1,3 +1,10 @@
+.contact-wrap {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 992px;
+  height: 150px;
+}
 .description-section {
   padding: 5em 0;
   overflow: hidden;
@@ -127,6 +134,7 @@
 }
 .projects-wrap {
   width: 100%;
+  padding: 2em 0em;
   overflow: hidden;
 }
 .projects-wrap-inner {
@@ -150,7 +158,7 @@
 }
 .project a {
   display: inline-block;
-  background-color: #000;
+  background-color: #566270 !important;
   overflow: hidden;
   border-radius: 10px;
   z-index: 5;
@@ -166,7 +174,6 @@
 .project a h2,
 .project a p {
   position: absolute;
-  color: #fff;
   z-index: -1;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -174,13 +181,15 @@
 }
 .project a h2 {
   top: 20px;
+  text-decoration: underline;
   width: 100%;
   text-align: center;
   font-size: 2.8em;
 }
 .project a p {
-  bottom: 0;
+  top: 35px;
   width: 100%;
+  color: #e0e3da;
   font-size: 1.8em;
   padding: 1em;
 }
@@ -458,7 +467,7 @@ html {
 }
 body {
   margin: 0;
-  background: #ececec;
+  background: #fffff3;
   font-size: 10px;
   font-family: 'montserrat', sans-serif;
   -ms-flex-align: center;
@@ -474,10 +483,24 @@ h3,
 h4 {
   padding: 0;
   margin: 0;
+  color: #a593e0;
+}
+p,
+a,
+li,
+span {
+  color: #566270;
 }
 #main {
   width: 100%;
 }
 .strikeout {
   text-decoration: line-through;
+}
+.hide-contact-wrap {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+  background-color: #fffff3;
+  margin-bottom: 150px;
 }

@@ -4,7 +4,7 @@ import ContactForm from './ContactForm'
 class Contact extends React.Component {
   render() {
     return (
-      <div>
+      <div className="contact-wrap">
         <h1>Contact</h1>
         <ContactForm />
       </div>
