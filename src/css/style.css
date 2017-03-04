@@ -121,16 +121,10 @@
 .stats-section .stats-main .stats-list ul li:last-child:after {
   content: '';
 }
-.main-section {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 .main {
-  width: 75%;
+  width: 100%;
   max-width: 992px;
-  margin: 0 0 0 auto;
+  margin: 0 auto;
 }
 .projects-wrap {
   width: 100%;
@@ -401,32 +395,46 @@ template {
 [hidden] {
   display: none;
 }
-.side-bar {
-  width: 25%;
-  max-width: 225px;
-  padding: 3em 2em;
-  margin: 0 0 0 auto;
-}
-.side-bar img {
-  display: block;
+.header {
+  width: 100%;
+  padding: 0em 2em;
   margin: 0 auto;
+  max-width: 992px;
 }
-.side-bar ul {
+.header ul {
   padding: 0;
   margin: 0;
-  width: 100%;
-  text-align: center;
+  text-align: left;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.side-bar ul li {
+.header ul li {
   padding: 0;
+  display: inline-block;
 }
-.side-bar ul li a {
+.header ul li h1 {
+  font-size: 4em;
+}
+.header ul li a {
   display: block;
-  padding: 1em;
+  padding: 1em 2em;
   font-size: 1.8em;
   text-decoration: none;
   color: #444;
+}
+.header ul li a.strikeout {
+  text-decoration: line-through;
 }
 .upper-wrap {
   overflow: hidden;

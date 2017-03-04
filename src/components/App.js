@@ -21,11 +21,9 @@ class App extends React.Component {
       <div>
         <div className="hide-contact-wrap">
           <Upper />
-          <div className="main-section">
-            <Sidebar />
-            <div className="main">
-              <Projects projectInfo={this.state.projects} />
-            </div>
+          <Sidebar />
+          <div className="main">
+            <Projects projectInfo={this.state.projects} />
           </div>
         </div>
         <Contact />
