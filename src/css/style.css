@@ -126,6 +126,49 @@
   max-width: 992px;
   margin: 0 auto;
 }
+.projects-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+}
+.project {
+  width: 100%;
+  position: relative;
+  margin: 4em 0;
+}
+.project:hover .project-info {
+  visibility: visible;
+}
+.project a {
+  overflow: hidden;
+}
+.project .project-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 300px;
+}
+.project .project-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  padding: 1em;
+  visibility: hidden;
+  -webkit-transition: visibility 0.3s ease;
+  transition: visibility 0.3s ease;
+}
 /* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif; /* 1 */

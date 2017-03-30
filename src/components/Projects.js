@@ -7,22 +7,28 @@ class Projects extends React.Component {
   }
   renderProjects(key) {
     const project = this.props.projectInfo[key];
+
+    var style = {
+      backgroundImage: "url('" + project.image + "')"
+    };
+
     return(
-      //When I come back to this I will add if cat is work do this if cat is personal do this.
       <div className="project" key={key}>
         <a target="_blank" href={project.link}>
-          <h2>{project.name}</h2>
-          <img src={project.image} alt="project img" />
-          <p>{project.desc}</p>
+          <div className="project-img" style={style}></div>
         </a>
+        <div className="project-info">
+          <h2>{project.name}</h2>
+          <p>{project.desc}</p>
+        </div>
       </div>
     )
   }
   render() {
     return (
-      <div className="projects-wrap">
+      <div className="project-section">
         <h1>Projects</h1>
-        <div className="projects-wrap-inner">
+        <div className="projects-wrap">
           {Object.keys(this.props.projectInfo).map(this.renderProjects)}
         </div>
       </div>

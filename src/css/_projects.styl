@@ -1,0 +1,30 @@
+.projects-wrap
+  display: flex
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em
+
+.project
+  width: 100%
+  position: relative;
+  margin: 4em 0
+  &:hover
+    .project-info
+      visibility: visible;
+  a
+    overflow: hidden;
+  .project-img
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 300px;
+  .project-info
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    padding: 1em;
+    visibility: hidden;
+    transition: visibility .3s ease;
