@@ -2,8 +2,8 @@ import React from 'react';
 import Upper from './Upper';
 //import Description from './Description';
 import Projects from './Projects';
-import Contact from './Contact';
-import Sidebar from './Sidebar';
+//import Contact from './Contact';
+//import Sidebar from './Sidebar';
 import projectInfo from '../project-obj.js';
 
 
@@ -15,18 +15,15 @@ class App extends React.Component {
       projects: projectInfo
     };
   }
-  //<Description />
   render() {
     return (
       <div>
         <div className="hide-contact-wrap">
           <Upper />
-          <Sidebar />
           <div className="main">
             <Projects projectInfo={this.state.projects} />
           </div>
         </div>
-        <Contact />
       </div>
     )
   }
