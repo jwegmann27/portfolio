@@ -1,8 +1,10 @@
 .projects-wrap
   display: flex
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: nowrap;
   justify-content: center;
+  width: 60%
+  margin: 0 0 0 auto
   padding: 1em
 
 .project
@@ -11,7 +13,7 @@
   margin: 4em 0
   &:hover
     .project-info
-      visibility: visible;
+      left: -40%;
   a
     overflow: hidden;
   .project-img
@@ -21,10 +23,14 @@
     min-height: 300px;
   .project-info
     position: absolute;
+    width: 40%;
     left: 0;
-    right: 0;
+    top: 0;
     bottom: 0;
     background: #fff;
     padding: 1em;
-    visibility: hidden;
-    transition: visibility .3s ease;
+    z-index: -1;
+    transition: left .3s ease;
+    &:hover
+      .project-info
+        left: -40%;

@@ -26,11 +26,9 @@ class Projects extends React.Component {
   }
   render() {
     return (
-      <div className="project-section">
+      <div className="projects-wrap">
         <h1>Projects</h1>
-        <div className="projects-wrap">
-          {Object.keys(this.props.projectInfo).map(this.renderProjects)}
-        </div>
+        {Object.keys(this.props.projectInfo).map(this.renderProjects)}
       </div>
     )
   }
