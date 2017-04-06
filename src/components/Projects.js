@@ -5,6 +5,7 @@ class Projects extends React.Component {
     super();
     this.renderProjects = this.renderProjects.bind(this);
   }
+
   renderProjects(key) {
     const project = this.props.projectInfo[key];
 
@@ -24,6 +25,7 @@ class Projects extends React.Component {
       </div>
     )
   }
+
   render() {
     return (
       <div className="projects-wrap">
@@ -32,6 +34,7 @@ class Projects extends React.Component {
       </div>
     )
   }
+
 }
 
 Projects.propTypes = {

@@ -3,9 +3,10 @@
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
-  width: 60%
+  width: 80%
   margin: 0 0 0 auto
   padding: 1em
+
 
 .project
   width: 100%
@@ -13,9 +14,12 @@
   margin: 4em 0
   &:hover
     .project-info
-      left: -40%;
+      left: 0%;
   a
     overflow: hidden;
+    display: block;
+    width: 65%;
+    margin: 0 0 0 auto;
   .project-img
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,14 +27,17 @@
     min-height: 300px;
   .project-info
     position: absolute;
-    width: 40%;
-    left: 0;
+    width: 35%;
+    left: 35%;
     top: 0;
     bottom: 0;
     background: #fff;
     padding: 1em;
     z-index: -1;
     transition: left .3s ease;
-    &:hover
-      .project-info
-        left: -40%;
+    h2
+      font-size: 2.5em
+      text-align: center
+      padding: 1rem 0
+    p
+      font-size: 1.6em
